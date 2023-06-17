@@ -44,21 +44,26 @@ function publishArticleTo(tray, site, isPublish, sleep) {
                     setTimeout(handler, sleep ? sleep : 1000)
                 }).catch(reason => {
                 logger.log('发布文章到', site, '失败：', title, reason.toString())
+
+                // 遇到异常了，默认：'跳过'
+                setTimeout(handler, sleep ? sleep : 1000)
+
                 // 是否重试
-                const n = dialog.showMessageBoxSync({
-                                                        message: `《${title}》\n${reason.toString()}`,
-                                                        buttons: ['取消', '跳过', '重试']
-                                                    })
-                if (n === 1) {
-                    setTimeout(handler, sleep ? sleep : 1000)
-                } else if (n === 2) {
-                    i--;
-                    setTimeout(handler, sleep ? sleep : 1000)
-                } else {
-                    // 4.关闭进度条图标
-                    tray.setImage(icon.iconFile)
-                    appToast.toast({title: `预处理${files.length}个,实际处理${number}个`})
-                }
+                // const n = dialog.showMessageBoxSync({
+                //                                         message: `《${title}》\n${reason.toString()}`,
+                //                                         buttons: ['取消', '跳过', '重试']
+                //                                     })
+                // if (n === 1) {
+                //     setTimeout(handler, sleep ? sleep : 1000)
+                // } else if (n === 2) {
+                //     i--;
+                //     setTimeout(handler, sleep ? sleep : 1000)
+                // } else { // 取消
+                //     // 4.关闭进度条图标
+                //     tray.setImage(icon.iconFile)
+                //     appToast.toast({title: `预处理${files.length}个,实际处理${number}个`})
+                // }
+
             })
         } else {
             // 4.关闭进度条图标
@@ -145,7 +150,7 @@ exports.downloadMdNetPicture = async function (tray) {
             if (appUtil.isWebPicture(src)) {
                 // 图片文件名
                 let filepath = path.join(dirname, name,
-                                         Math.floor(Math.random() * 100000000) + '.png')
+                    Math.floor(Math.random() * 100000000) + '.png')
                 map.set(src, filepath)
             }
         })
@@ -334,7 +339,7 @@ exports.pictureMdToImg = function (tray) {
                     let src = split[i].substring(start + 1, end) //图片的真实地址
                     line =
                         line.replace("!" + split[i],
-                                     `<img src="${src}" referrerPolicy="no-referrer"/>`)
+                            `<img src="${src}" referrerPolicy="no-referrer"/>`)
                 }
             }
             newValue += line + '\n'
@@ -411,8 +416,8 @@ exports.coverToText = function coverToText() {
 exports.HTMLToMd = function (tray) {
     // 1.选择本地文件
     const result = appDialog.openManyLocalFileSync([
-                                                       {name: 'html', extensions: ['html']}
-                                                   ])
+        {name: 'html', extensions: ['html']}
+    ])
     if (result.canceled) {
         return
     }
