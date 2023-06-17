@@ -5,7 +5,7 @@
   "productName": "BlogHelper",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . DISPLAY=:0 sudo chromium-browser --no-sandbox",
     "dist": "electron-builder",
     "ico": "png-to-ico build/app.png > build/app.ico"
   },

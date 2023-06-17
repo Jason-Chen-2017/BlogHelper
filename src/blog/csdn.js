@@ -67,12 +67,13 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
         if (isPublish) {
             parms['status'] = 0
             parms['type'] = 'original'
-            parms['Description'] = content.toString().substring(0,100)
+            parms['pubStatus'] = 'draft'
+            parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = ''
+            parms['categories'] = '大数据AI人工智能'
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = ''
+            parms['tags'] = '自然语言处理,人工智能,语言模型,python,开发语言'
 
         }else {
             parms['status'] = 2
