@@ -37,8 +37,12 @@ function publishArticleTo(tray, site, isPublish, sleep) {
             i++;
             appPublish.publishArticleTo(title, content, dirname, site, isPublish)
                 .then(url => {
+
                     logger.log('发布文章到', site, '成功：', title)
+                    console.log('发布文章到', site, '成功：', title)
+
                     number++
+
                     appToast.openPublishUrl(url, title)
                     // 调用自身
                     setTimeout(handler, sleep ? sleep : 1000)
