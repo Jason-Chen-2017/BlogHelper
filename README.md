@@ -32,17 +32,6 @@
 
 - 🙋[我要提需求](https://github.com/ystcode/BlogHelper/issues)
 
-## 🚩下载我吧
-
-- 📥[点击下载](https://github.com/ystcode/BlogHelper/releases)
-
-## 🚩预览
-
-<img src="https://imgkr.cn-bj.ufileos.com/c63683bc-5879-4cbf-941d-75bae971c64a.png" referrerpolicy="no-referrer" width="400px" />
-
-<img src="https://imgkr.cn-bj.ufileos.com/38e06304-f5b1-46f1-a290-bbe451398bf1.png" referrerpolicy="no-referrer" width="400px"/>
-
-预览图可能版本过低，请以具体应用为准。
 
 ## 🚩插件开发
 
@@ -52,16 +41,8 @@
 
 ## 🚩关于作者
 
-- 薛勤，一个就爱瞎鼓捣的程序猿🐒 欢迎关注个人技术公众号：代码艺术
+- 禅与计算机程序设计艺术，一个会写诗的程序员，欢迎关注个人技术公众号：禅与计算机程序设计艺术
 
-- 我的邮箱：[codeblog@qq.com](mailto:codeblog@qq.com)📩
-
-- 我的微信：关注公众号"代码艺术"，点击右下角菜单栏获取！拉你进群！
-
-- LOGO设计师：Summer（QQ：1003737038）
-
-#### 📣如果帮助到你了，请帮忙点亮[Github](https://github.com/ystcode/BlogHelper)右上角小星星，这将是我持续更新的动力！
-
-<img src="https://i.loli.net/2020/01/13/pPoFNwT6fKCZQ2i.png" width="300px" referrerpolicy="no-referrer">
+- 我的邮箱：[universsky@163.com](mailto:universsky@163.com)📩
 
 #### ❗本项目使用GPL开源协议，使用了本项目代码的项目也必须使用 GPL 协议开源。
