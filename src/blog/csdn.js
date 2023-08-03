@@ -74,10 +74,12 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['original_link'] = ''
             parms['resource_url'] = ''
             parms['tags'] = '自然语言处理,人工智能,语言模型,编程实践,开发语言,架构设计'
+            parms['plan_id'] = '3' // 原力计划
 
         }else {
             parms['status'] = 2
         }
+
         const json = JSON.stringify(parms)
         let request = https.request({
                                         host: 'blog-console-api.csdn.net',
