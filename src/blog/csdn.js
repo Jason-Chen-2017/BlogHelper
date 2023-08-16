@@ -70,7 +70,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['pubStatus'] = 'draft'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = 'Java,编程实践,Python'
+            parms['categories'] = 'AI,大数据AI人工智能,机器学习'
             parms['original_link'] = ''
             parms['resource_url'] = ''
             parms['tags'] = '自然语言处理,人工智能,语言模型,编程实践,开发语言,架构设计'
