@@ -70,7 +70,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['pubStatus'] = 'draft'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = '大数据AI人工智能,AI'  // 专注聚焦：大数据AI人工智能,AI
+            parms['categories'] = '禅与计算机程序设计艺术'  // 先统一发布到专栏：禅与计算机程序设计艺术
             parms['original_link'] = ''
             parms['resource_url'] = ''
             parms['tags'] = '大数据,人工智能,语言模型,Java,Python,架构设计'
