@@ -75,7 +75,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['resource_url'] = ''
             parms['tags'] = '大数据,人工智能,语言模型,Java,Python,架构设计'
             parms['plan_id'] = '3' // 原力计划
-            parms['creator_activity_id'] = '10500' // 活动 id
+            parms['creator_activity_id'] = '10567' // 活动 id
 
         }else {
             parms['status'] = 2
