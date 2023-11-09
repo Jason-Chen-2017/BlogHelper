@@ -70,11 +70,11 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['pubStatus'] = 'draft'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = 'AI,大数据AI人工智能,Python'  // 专栏 AI,大数据AI人工智能,Python
+            parms['categories'] = 'AI实战,大数据AI人工智能,Python实战'  // 专栏: AI实战,大数据AI人工智能,Python实战
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = '大数据,人工智能,语言模型,Java,Python,架构设计'
-            parms['plan_id'] = '3' // 原力计划
+            parms['tags'] = '大数据,人工智能,语言模型,AI,LLM,Java,Python,架构设计'
+            // parms['plan_id'] = '3' // 原力计划
             // parms['creator_activity_id'] = '10584' // 1024 活动 id
 
         }else {
