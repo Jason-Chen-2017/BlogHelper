@@ -70,7 +70,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['pubStatus'] = 'draft'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = '【ALLMA】AI大模型应用实战'  // 专栏: AI实战,大数据AI人工智能,Python实战
+            parms['categories'] = 'AI大模型应用入门实战与进阶,AI大模型企业级应用开发实战,LLM大模型落地实战指南'  // 专栏: AI实战,大数据AI人工智能,Python实战
             parms['original_link'] = ''
             parms['resource_url'] = ''
             parms['tags'] = '大数据,人工智能,语言模型,AI,LLM,Java,Python,架构设计,Agent,RPA'
