@@ -68,24 +68,28 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['status'] = 0
             parms['type'] = 'original'
             parms['pubStatus'] = 'draft'
+            // vip阅读
+            parms['readType'] = 'read_need_vip'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = 'AI大模型应用开发实战案例详解'  // 专栏
+            parms['categories'] = 'Python实战,人工智能实战,大数据实战'  // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = '大数据,人工智能,语言模型,AI,LLM,Java,Python,架构设计,Agent,RPA'
+            parms['tags'] = '计算,大数据,人工智能,语言模型,AI,大模型,LLM,Java,Python,架构设计,Agent,RPA'
             // parms['plan_id'] = '3' // 原力计划
-            parms['creator_activity_id'] = '10657' // 活动 id
+            parms['creator_activity_id'] = '10663' // 活动 id
 
         }else {
             parms['status'] = 2
         }
 
+        // POST
+        // https://bizapi.csdn.net/blog-console-api/v3/mdeditor/saveArticle
         const json = JSON.stringify(parms)
         let request = https.request({
                                         host: 'blog-console-api.csdn.net',
                                         method: 'POST',
-                                        path: '/v1/mdeditor/saveArticle',
+                                        path: '/v3/mdeditor/saveArticle',
                                         headers: {
                                             "content-type": "application/json",
                                             "cookie": dataStore.getCSDNCookies(),
