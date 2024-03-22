@@ -72,12 +72,13 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['readType'] = 'read_need_vip'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = 'Python实战,人工智能实战,大数据实战'  // 专栏
+            // parms['categories'] = '神经网络与深度学习,AI大语言模型和知识图谱融合,AI大语言模型和电商业务融合'  // 专栏
+            parms['categories'] = '深度学习与AGI通用人工智能,AI神经网络与神经计算科学,AI大型语言模型与多模态'   // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = '计算,大数据,人工智能,语言模型,AI,大模型,LLM,Java,Python,架构设计,Agent,RPA'
+            parms['tags'] = '计算科学,神经计算,深度学习,神经网络,大数据,人工智能,大型语言模型,AI,AGI,LLM,Java,Python,架构设计,Agent,RPA'
             // parms['plan_id'] = '3' // 原力计划
-            parms['creator_activity_id'] = '10663' // 活动 id
+            // parms['creator_activity_id'] = '10663' // 活动 id
 
         }else {
             parms['status'] = 2
