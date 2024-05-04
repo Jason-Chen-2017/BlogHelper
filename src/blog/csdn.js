@@ -72,7 +72,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             // parms['readType'] = 'read_need_vip'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = '神经网络与深度学习,AI大语言模型和知识图谱融合,AI大语言模型和电商业务融合'  // 专栏
+            parms['categories'] = '一切皆是映射:AI人工智能与大数据原理与应用实战,一切皆是映射:深度强化学习原理与应用实战,一切皆是映射:人工智能数学基础原理与应用实战'  // 专栏
             // parms['categories'] = '深度学习与AGI通用人工智能,AI神经网络与神经计算科学,AI大型语言模型与多模态'   // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
