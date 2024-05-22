@@ -29,6 +29,18 @@ function publishArticleTo(tray, site, isPublish, sleep) {
     let number = 0
     // 定时任务
     let i = 0
+
+
+    const options = {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    };
+
     let handler = function () {
         if (i < files.length) {
             const title = files[i].title
@@ -38,8 +50,11 @@ function publishArticleTo(tray, site, isPublish, sleep) {
             appPublish.publishArticleTo(title, content, dirname, site, isPublish)
                 .then(url => {
 
-                    logger.log('发布文章到', site, '成功：', title)
-                    console.log('发布文章到', site, '成功：', title)
+                    const date = new Date()
+                    const eastEightTime = date.toLocaleString('en-US', options);
+
+                    logger.log(eastEightTime, '发布文章到', site, '成功：', title)
+                    console.log(eastEightTime, '发布文章到', site, '成功：', title)
 
                     number++
 
@@ -47,6 +62,7 @@ function publishArticleTo(tray, site, isPublish, sleep) {
                     // 调用自身
                     setTimeout(handler, sleep ? sleep : 1000)
                 }).catch(reason => {
+
                 logger.log('发布文章到', site, '失败：', title, reason.toString())
 
                 // 遇到异常了，默认：'跳过'
