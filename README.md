@@ -1,9 +1,16 @@
-<div align="center">
 <h1>📝写作助手</h1>
 <img src="https://img.shields.io/github/license/ystcode/BlogHelper"/>
 <img src="https://img.shields.io/static/v1?label=electron&message=7.1.7&color="/>
 <img src="https://img.shields.io/static/v1?label=mac|win|linux&message=7.1.7&color=yellow"/>
 </div>
+
+
+## Quick Start
+
+```shell
+yarn install
+yarn start
+```
 
 ## 🚩我是谁
 

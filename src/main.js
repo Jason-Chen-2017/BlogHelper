@@ -22,7 +22,8 @@ function createTray() {
     // 新建系统托盘并添加图标
     const tray = new Tray(icon.iconFile)
     // 悬停通知
-    tray.setToolTip('你今天真好看')
+    tray.setToolTip('Hi')
+    tray.setTitle('BlogHelper')
     // 添加菜单到系统托盘区
     tray.setContextMenu(appMenu.buildContextMenu(tray))
     // 添加主题监听
