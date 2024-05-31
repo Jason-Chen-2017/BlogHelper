@@ -53,8 +53,8 @@ function publishArticleTo(tray, site, isPublish, sleep) {
                     const date = new Date()
                     const eastEightTime = date.toLocaleString('en-US', options);
 
-                    logger.log(eastEightTime, '发布文章到', site, '成功：', title)
-                    console.log(eastEightTime, '发布文章到', site, '成功：', title)
+                    logger.log(eastEightTime, '发布文章到', site, '成功：', number, '.', title)
+                    console.log(eastEightTime, '发布文章到', site, '成功：', number, '.', title)
 
                     number++
 
