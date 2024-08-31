@@ -72,11 +72,11 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             // parms['readType'] = 'read_need_vip'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = '一切皆是映射:AI人工智能与大数据原理与应用实战,一切皆是映射:深度强化学习原理与应用实战,一切皆是映射:人工智能数学基础原理与应用实战'  // 专栏
-            // parms['categories'] = '深度学习与AGI通用人工智能,AI神经网络与神经计算科学,AI大型语言模型与多模态'   // 专栏
+            // parms['categories'] = '一切皆是映射:AI人工智能与大数据原理与应用实战,一切皆是映射:深度强化学习原理与应用实战,一切皆是映射:人工智能数学基础原理与应用实战'  // 专栏
+            parms['categories'] = '光剑书架上的书'   // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = '计算科学,神经计算,深度学习,神经网络,大数据,人工智能,大型语言模型,AI,AGI,LLM,Java,Python,架构设计,Agent,RPA'
+            parms['tags'] = '程序员读书,硅基计算,碳基计算,认知计算,生物计算,深度学习,神经网络,大数据,AIGC,AGI,LLM,Java,Python,架构设计,Agent,程序员实现财富自由'
             // parms['plan_id'] = '3' // 原力计划
             // parms['creator_activity_id'] = '10663' // 活动 id
 
