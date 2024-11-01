@@ -62,15 +62,17 @@ function publishArticleTo(tray, site, isPublish, sleep) {
                     appToast.openPublishUrl(url, title)
 
                     // 调用自身
-                    var sleep = sleep ? sleep : 1000
+                    var sleep = sleep ? sleep : 30000
                     if (site === string.csdn) {
-                        // js 随机生成30000到300000之间的数字在JavaScript中，你可以使用Math.random()函数来生成一个随机数。
-                        // 在这段代码中，`Math.random()`生成一个0到1之间的随机数，然后乘以（300000 - 30000 + 1）得到一个0到20001之间的随机数，然后加上30000得到一个30000到300000之间的随机数。`Math.floor()`函数用于向下取整，确保生成的是一个整数。
-                        var randomNum = Math.floor(Math.random() * (300000 - 30000 + 1)) + 30000;
+                        // js 随机生成 30000 到 33000 之间的数字
+                        // 在JavaScript中，你可以使用Math.random()函数来生成一个随机数。
+                        // 在这段代码中，`Math.random()`生成一个0到1之间的随机数，然后乘以（33000 - 30000 + 1）得到一个0到3000之间的随机数，然后加上30000得到一个30000到40000之间的随机数。`Math.floor()`函数用于向下取整，确保生成的是一个整数。
+                        // sleep 30~40s
+                        var randomNum = Math.floor(Math.random() * (33000 - 30000 + 1)) + 30000;
                         sleep = randomNum;
                     }
 
-                    // sleep randomly for about 30s~5min, 避免被算法识别出来是机器发文章
+                    // sleep randomly for about 30s~33s, 避免被算法识别出来是机器发文章
                     setTimeout(handler, sleep);
 
                 }).catch(reason => {
