@@ -74,8 +74,9 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             parms['readType'] = 'read_need_fans'
             parms['Description'] = content.toString().substring(0,200)
             parms['authorized_status'] = false
-            parms['categories'] = 'AI人工智能与大数据原理与应用实践,计算机软件编程原理与应用实践,数学与计算逻辑哲学原理与应用实践'  // 专栏
-            // parms['categories'] = '深度学习与AGI通用人工智能,AI神经网络与神经计算科学,AI大型语言模型与多模态'   // 专栏
+            // parms['categories'] = 'AI人工智能与大数据原理与应用实践,计算机软件编程原理与应用实践,数学与计算逻辑哲学原理与应用实践'  // 专栏
+            // parms['categories'] = '光剑书架上的书'   // 专栏
+            parms['categories'] = '【大厂Offer收割机】大厂面试题笔试指导简历修改面试辅导'   // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
             parms['tags'] = 'java,python,javascript,kotlin,golang,架构,人工智能'
