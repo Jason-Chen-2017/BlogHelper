@@ -79,7 +79,7 @@ function publishArticleToCSDN(title, markdowncontent, content, isPublish) {
             // parms['categories'] = '【大厂Offer收割机】大厂面试题笔试指导简历修改面试辅导'   // 专栏
             parms['original_link'] = ''
             parms['resource_url'] = ''
-            parms['tags'] = 'java,python,javascript,kotlin,golang,架构,人工智能'
+            parms['tags'] = 'java,python,javascript,kotlin,golang,架构,人工智能,大厂程序员,硅基计算,碳基计算,认知计算,生物计算,深度学习,神经网络,大数据,AIGC,AGI,LLM,系统架构设计,软件哲学,Agent,程序员实现财富自由'
             // parms['plan_id'] = '3' // 原力计划
             // parms['creator_activity_id'] = '10663' // 活动 id
 
