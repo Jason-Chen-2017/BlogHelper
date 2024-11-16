@@ -17,8 +17,8 @@
   "repository": "https://github.com/ystcode/BlogHelper",
   "license": "GPL-3.0-only",
   "devDependencies": {
-    "electron": "^7.1.7",
-    "electron-builder": "^22.1.0",
+    "electron": "^13.0.0",
+    "electron-builder": "^22.10.5",
     "png-to-ico": "^2.1.0"
   },
   "dependencies": {
@@ -48,6 +48,9 @@
       "category": "public.app-category.productivity",
       "target": [
         "dmg"
+      ],
+      "arch": [
+        "arm64"
       ]
     },
     "win": {
@@ -63,5 +66,9 @@
         "AppImage"
       ]
     }
+  },
+  "config": {
+    "npm_config_arch": "arm64",
+    "npm_config_target_arch": "arm64"
   }
 }
