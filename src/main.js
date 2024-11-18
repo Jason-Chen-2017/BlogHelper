@@ -7,7 +7,7 @@ const picGo = require('./picture/picgo/picgo')
 
 app.on('ready', () => {
     // 隐藏系统任务栏
-    hiddenTaskbar()
+    // hiddenTaskbar()
     // 检查更新
     autoUpdate.autoUpdateApp(false)
     // 创建托盘
@@ -27,7 +27,7 @@ function createTray() {
     // 添加菜单到系统托盘区
     tray.setContextMenu(appMenu.buildContextMenu(tray))
     // 添加主题监听
-    listenThemeChange(tray)
+    // listenThemeChange(tray)
     return tray
 }
 
