@@ -23,7 +23,7 @@ function createTray() {
     const tray = new Tray(icon.iconFile)
     // 悬停通知
     tray.setToolTip('Hi')
-    tray.setTitle('BlogHelper')
+    tray.setTitle('')
     // 添加菜单到系统托盘区
     tray.setContextMenu(appMenu.buildContextMenu(tray))
     // 添加主题监听
